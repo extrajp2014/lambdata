@@ -1,0 +1,8 @@
+README.md
+setup.py
+lambdata_extrajp2014.egg-info/PKG-INFO
+lambdata_extrajp2014.egg-info/SOURCES.txt
+lambdata_extrajp2014.egg-info/dependency_links.txt
+lambdata_extrajp2014.egg-info/requires.txt
+lambdata_extrajp2014.egg-info/top_level.txt
+lambdata_jpalex/__init__.py
