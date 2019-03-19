@@ -32,5 +32,5 @@ class Statistic:
     """
     Calculate the standard deviation of sample dataset (n - 1)
     """
-    stdev = np.sqrt(mean_variance(numbers))
+    stdev = np.sqrt(variance(self.numbers))
     return stdev
