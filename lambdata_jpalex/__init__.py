@@ -8,7 +8,7 @@ class Statistic:
   def __init__(self, numbers = [1,2], confidence=0.95):
     """
     numbers = array of numbers
-    confidence = 0 to 1
+    confidence = confidence interval, default is 95%
     """
     self.numbers = numbers
     self.confidence = confidence
