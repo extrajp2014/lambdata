@@ -13,7 +13,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="lambdata-extrajp2014",
-    version="0.0.1",
+    version="0.0.3",
     author="extrajp2014",
     description="A collection of Data Science helper functions",
     long_description=LONG_DESCRIPTION,
