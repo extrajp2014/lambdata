@@ -12,12 +12,14 @@ class Statistic:
     """
     self.numbers = numbers
     self.confidence = confidence
+    
   def mean(self):
     """
     Calculate the mean of dataset
     """
     mean = sum(self.numbers)/len(self.numbers)
     return mean
+  
   def variance(self):
     """
     Calculate the variances of sample dataset (n - 1)
@@ -25,6 +27,7 @@ class Statistic:
     differences = [(x-mean(self.numbers))**2 for x in self.numbers]
     variance = sum(differences)/(len(differences)-1)
     return variance
+  
   def stdev(self):
     """
     Calculate the standard deviation of sample dataset (n - 1)
