@@ -16,28 +16,20 @@ class Statistic:
         """
         Calculate the mean of dataset
         """
-        mean = sum(self.numbers)/len(self.numbers)
-        return mean
+        self.mean = sum(self.numbers)/len(self.numbers)
+        return self.mean
 
     def variance(self):
         """
         Calculate the variances of sample dataset (n - 1)
         """
-        mean = sum(self.numbers) / len(self.numbers)
-        differences = [(x-mean)**2 for x in self.numbers]
-        variance = sum(differences)/(len(differences)-1)
-        return variance
+        differences = [(x-mean())**2 for x in self.numbers]
+        self.variance = sum(differences)/(len(differences)-1)
+        return self.variance
 
     def stdev(self):
         """
         Calculate the standard deviation of sample dataset (n - 1)
         """
-        mean = sum(self.numbers) / len(self.numbers)
-        differences = [(x-mean)**2 for x in self.numbers]
-        variance = sum(differences)/(len(differences)-1)
-        stdev = np.sqrt(variance)
-        return stdev
-
-test = Statistic().stdev()
-print(test)
-
+        self.stdev = np.sqrt(variance())
+        return self.stdev
